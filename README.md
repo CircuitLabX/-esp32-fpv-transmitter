@@ -90,7 +90,6 @@ pins).
 ## 📡 Protocol / Compatibility
 
 - **Flight controller firmware:** [EspFC](https://github.com/rtlopez/esp-fc) (Betaflight-compatible, ESP32-native). On the drone's Receiver tab, set **Receiver Mode → `SPI Rx (e.g. built-in Rx)`**.
-- **Link layer:** Raw `esp_now.h` (built into the ESP32 Arduino core) — no third-party RC library. Reverse-engineered from EspFC's `espnow-rclink` transport (`Protocol.h` / `Transmitter.h` / `Receiver.h`), which is **not** documented publicly beyond its source.
 * **Link Layer:** Custom ESP-NOW implementation for seamless, low-latency EspFC protocol communication with built-in checksum validation and channel synchronization.
 Channelannel order:** `AETR1234` (Roll, Pitch, Throttle, Yaw, then AUX1–4) — EspFC/Betaflight's standard default; no remap needed on the FC side.
 - **Pairing:** the drone broadcasts `PAIR_REQ` (with its current WiFi channel) until a TX replies; this TX channel-hops 1–13 every 300 ms to find it, then tracks the drone's MAC from the received packet.

@@ -1,6 +1,6 @@
 # FPV  Drone Transmitter (ESP32 + ESP-NOW + EspFC)
 
-A fully custom, hand-built FPV radio transmitter for a 3" micro brushless quadcopter.
+A fully custom, hand-built FPV radio transmitter for brushless,brushed quadcopter.
 No off-the-shelf TX, no PPM/SBUS/CRSF, no third-party RC library — this talks directly
 to [EspFC](https://github.com/rtlopez/esp-fc) (a Betaflight-compatible flight controller
 firmware for ESP32) over **raw ESP-NOW**, using a wire protocol reverse-engineered from

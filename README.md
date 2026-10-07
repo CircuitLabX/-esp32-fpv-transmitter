@@ -1,4 +1,4 @@
-# FPV Micro Drone Transmitter (ESP32 + ESP-NOW + EspFC)
+# FPV  Drone Transmitter (ESP32 + ESP-NOW + EspFC)
 
 A fully custom, hand-built FPV radio transmitter for a 3" micro brushless quadcopter.
 No off-the-shelf TX, no PPM/SBUS/CRSF, no third-party RC library — this talks directly
